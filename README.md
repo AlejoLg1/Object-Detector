@@ -12,17 +12,26 @@ Este proyecto implementa un detector de objetos en tiempo real utilizando la arq
 
 1. Clona o descarga este repositorio:
 
-git clone https://github.com/AlejoLg1/Object-Detector.git
+~~~
+https://github.com/AlejoLg1/Object-Detector.git
+~~~
 
 
 2. Instala las dependencias necesarias:
+
+~~~
+pip install opencv-python numpy
+~~~
 
 
 ## Uso
 
 1. Ejecuta el script `main.py`:
 
+~~~
 python main.py
+~~~
+
 
 2. La aplicación comenzará a capturar video desde la cámara en vivo y detectará objetos en cada cuadro.
 
@@ -32,5 +41,5 @@ python main.py
 
 - Puedes ajustar los hiperparámetros como el umbral de confianza (`confidence_threshold`) y el umbral de supresión no máxima (`nms_threshold`) en el archivo `main.py` según sea necesario para tu aplicación.
 - Para usar tu propio modelo YOLOv3, asegúrate de actualizar los archivos de configuración y pesos en la función `cv2.dnn.readNetFromDarknet()`.
-# Object-Detector
-# object-detector
+
+
