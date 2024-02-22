@@ -53,10 +53,10 @@ El rendimiento de la aplicación puede variar significativamente según los comp
 
 ## Imágenes
 
-![Car][images\car.png]
+![Car](images\car.png)
 
-![Botle][images\bottle.png]
+![Botle](images\bottle.png)
 
-![Remote][images\remote.png]
+![Remote](images\remote.png)
 
 
