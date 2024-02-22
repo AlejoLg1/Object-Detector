@@ -10,7 +10,7 @@ def main():
     Los objetos detectados se dibujan con cuadros delimitadores y etiquetas de clase en el video en tiempo real.
     """
     # Cargar el modelo YOLOv3 preentrenado
-    model = cv2.dnn.readNetFromDarknet("models/yolov3.cfg", "models/yolov3.weights")
+    model = cv2.dnn.readNetFromDarknet("model/yolov3.cfg", "model/yolov3.weights")
 
     # Cargar las clases del conjunto de datos COCO
     classes = []
