@@ -55,7 +55,7 @@ El rendimiento de la aplicación puede variar significativamente según los comp
 
 ![Car](images/car.png)
 
-![Botle](images/bottle.png)
+![Bottle](images/bottle.png)
 
 ![Remote](images/remote.png)
 
