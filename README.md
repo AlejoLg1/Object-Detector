@@ -51,3 +51,12 @@ El rendimiento de la aplicación puede variar significativamente según los comp
 - Memoria RAM
 - Disco duro
 
+## Imágenes
+
+![Car]["images\car.png]
+
+![Botle]["images\bottle.png]
+
+![Remote]["images\remote.png]
+
+
