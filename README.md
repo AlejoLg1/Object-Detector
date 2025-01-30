@@ -1,62 +1,57 @@
-# Detector de objetos con YOLOv3
+# Object Detector with YOLOv3
 
-Este proyecto implementa un detector de objetos en tiempo real utilizando la arquitectura YOLOv3 y OpenCV. El detector es capaz de identificar y dibujar cuadros delimitadores alrededor de varios objetos en un flujo de video en vivo.
+This project implements a real-time object detector using the YOLOv3 architecture and OpenCV. The detector can identify and draw bounding boxes around multiple objects in a live video stream.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
 - OpenCV
 - NumPy
 
-## Instalación
+## Installation
 
-1. Clona o descarga este repositorio:
+1. Clone or download this repository:
 
 ~~~
 https://github.com/AlejoLg1/Object-Detector.git
 ~~~
 
-
-2. Instala las dependencias necesarias:
+2. Install the necessary dependencies:
 
 ~~~
 pip install opencv-python numpy
 ~~~
 
+## Usage
 
-## Uso
-
-1. Ejecuta el script `main.py`:
+1. Run the `main.py` script:
 
 ~~~
 python main.py
 ~~~
 
+2. The application will start capturing video from the live camera and detecting objects in each frame.
 
-2. La aplicación comenzará a capturar video desde la cámara en vivo y detectará objetos en cada cuadro.
+3. To stop the application, press the 'q' key.
 
-3. Para detener la aplicación, presiona la tecla 'q'.
+## Customization
 
-## Personalización
+- You can adjust hyperparameters such as the confidence threshold (`confidence_threshold`) and non-maximum suppression threshold (`nms_threshold`) in the `main.py` file as needed for your application.
+- To use your own YOLOv3 model, make sure to update the configuration and weight files in the `cv2.dnn.readNetFromDarknet()` function.
 
-- Puedes ajustar los hiperparámetros como el umbral de confianza (`confidence_threshold`) y el umbral de supresión no máxima (`nms_threshold`) en el archivo `main.py` según sea necesario para tu aplicación.
-- Para usar tu propio modelo YOLOv3, asegúrate de actualizar los archivos de configuración y pesos en la función `cv2.dnn.readNetFromDarknet()`.
+## Factors Affecting Performance
 
-## Factores que afectan el rendimiento
+The application's performance may vary significantly depending on the user's computer system components. Below are some key factors that may influence the user experience:
 
-El rendimiento de la aplicación puede variar significativamente según los componentes del sistema de la computadora del usuario. A continuación, se enumeran algunos factores importantes que pueden influir en la experiencia de uso:
+- Processor (CPU)
+- Graphics card (GPU)
+- RAM memory
+- Hard drive
 
-- Procesador (CPU)
-- Tarjeta gráfica (GPU)
-- Memoria RAM
-- Disco duro
-
-## Imágenes
+## Images
 
 ![Car](images/car.png)
 
 ![Bottle](images/bottle.png)
 
 ![Remote](images/remote.png)
-
-
